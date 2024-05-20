@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('./fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+#background-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#background-image-credit {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    height: 7em;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+#odin-logo {
+    height: 6em;
+}
+
+#logo-text {
+    font-family: 'Norse Bold', sans-serif;
+    font-size: 6em;
+}
+
+.left-section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    background-image: url('./images/lisha-riabinina-e3Hit0jKUbY-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.right-section {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    margin: 10px;
+    background-color: beige;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    border: outset;
+    padding: 20px;
+    gap: 25px;
+    background-color: white;
+}
+
+.form-title {
+    margin: 0;
+}
+
+.sign-up-form > * {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    padding: 5px;
+    width: 150px;
+    border: 1px solid #E5E7EB;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:invalid {
+    border-color: red;
+}
+
+.input-field:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.input-field.mismatch {
+    border-color: red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+#create-account-button {
+    background-color: rgb(65, 104, 65);
+    color: white;
+    padding: 10px 30px;
+    margin: 0px 15px;
+    margin-top: 15px;
+    font-size: 1em;
+    border-radius: 8px;
+    border-color: gray;
+}
+
+.right-section-text {
+    margin: 15px;
+}
